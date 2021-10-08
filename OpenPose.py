@@ -1,7 +1,6 @@
 import os
 import json
 import matplotlib.pyplot as plt
-import cv2
 
 
 class OpenPose:
@@ -75,10 +74,6 @@ class OpenPose:
         # ax.xaxis.set_ticks_position('top')  # 将X坐标轴移到上面
         # ax.invert_yaxis()  # 反转Y坐标轴
         plt.show()
-
-    def readPictureDPI(self, currentPicturePath):
-        picture = cv2.imread(currentPicturePath)
-        DPI = picture.shape[0:1]
 
 
 def main():
